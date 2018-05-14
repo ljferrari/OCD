@@ -1,0 +1,593 @@
+@font-face {
+  font-family: 'Brown-Regular';
+  src: url('Brown-Regular.eot');
+  src: url('Brown-Regular.woff2') format('woff2'),
+       url('Brown-Regular.woff') format('woff'),
+       url('Brown-Regular.ttf') format('truetype'),
+       url('Brown-Regular.svg#Brown-Regular') format('svg'),
+       url('Brown-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BrownStd-Bold';
+  src: url('BrownStd-Bold.eot');
+  src: url('BrownStd-Bold.woff2') format('woff2'),
+       url('BrownStd-Bold.woff') format('woff'),
+       url('BrownStd-Bold.ttf') format('truetype'),
+       url('BrownStd-Bold.svg#BrownStd-Bold') format('svg'),
+       url('BrownStd-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*
+* Base structure
+*/
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    text-rendering: optimizeLegibility;
+
+}
+
+img {
+    width: 100%;
+}
+
+/*padding & margin */
+
+
+#video {
+    padding-bottom: 8em;
+}
+
+#portfolio,
+#testimonials {
+    padding-top: 1rem;
+} 
+
+#contact {
+    padding-top:4em;
+}
+
+
+.sep {
+    max-width: 80px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.sep-dot {
+    max-width: 1px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: #222;
+}
+
+.nav-link {
+    font-family: 'BrownStd-Bold', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 
+    margin: 0rem 1.5em;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #fff;
+    transition: 1s;
+}
+
+
+/* Cover */ 
+
+#hero-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(img/smoke-min.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Cover Caption */
+
+#cover-container {
+    margin: 0 auto;
+    text-align: center;
+    background-color: none;
+    padding: 20px;
+    color: #fff;
+}
+
+#cta-text,
+#cover-heading {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5em;
+    text-transform: uppercase;
+}
+
+#cover-heading {
+    font-size: 16em;
+}
+
+
+.lead p {
+    font-size: 0.9em;
+    letter-spacing: 0.15rem;
+    padding:0;
+    margin:0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-outline-secondary {
+    border: 0.125em solid #E0E0E0!important;
+}
+
+.btn-outline-secondary:hover {
+    color: white;
+    background-color: #0D0D0D;
+    border-color: #0D0D0D !important;
+    transition: 0.3s;
+}
+
+
+/*
+.btn-lg {
+    padding: 1.3125rem 4.1875rem;
+}
+*/
+
+.btn-lg {
+    padding: 1rem 4.1875rem;
+}
+
+#cta-text p {
+    font-size: 0.875rem;
+}
+
+
+/* About Section */
+
+
+#about {
+    background-color: #0D0D0D;
+    color: #E0E0E0;
+    padding-top: 5.5em;
+}
+
+.heading {
+    
+    font-family: 'Nothing You Could Do', cursive;
+    letter-spacing: 0.190625;
+    font-size: 3.5rem;
+    color: #E0E0E0;
+}
+
+
+.text-content,
+.project-name,
+.project-category {
+    font-family: 'Brown-Regular', serif;
+    font-size: 0.875em;
+    line-height: 2;
+    letter-spacing: 0.0475em;
+    padding: 0;
+    color:#e0e0e0;
+}
+
+
+#oli {
+    width: 100%;
+    max-width: 25em;
+}
+    
+/* Video section */
+    
+
+#video {
+    background: url(img/black-wood-min.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #F5F5F5;
+    position: relative;
+    padding: 8rem;
+}
+
+#video-content {
+    width: 100%;
+    margin: 8rem 0;
+}
+
+
+/* Portfolio Section */
+
+#portfolio-heading,
+#testimonials-heading {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+
+
+#portfolio,
+#testimonials {
+    text-align: center;
+    background-color: #0d0d0d;
+    color: #F5F5F5;
+}
+.sep-black {
+    border-color: black;
+}
+
+.port-sep {
+    margin-bottom: 8rem;
+}
+
+.project-name {
+    font-family:'Brown-Regular', serif;
+    color:#fff;
+    line-height: 1.5;
+}
+
+.project-category {
+    font-family: 'BrownStd-Bold', serif;
+    line-height: 1.5;
+    color: #fff;
+    
+}
+
+#portfolio p {
+    margin-bottom: 40px;
+}
+#portfolio .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+#portfolio .container-fluid .col-md-4,
+portfolio .container-fluid .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+}
+#portfolio .portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+#portfolio .portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(13, 13, 13, 0.6);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+#portfolio .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+
+/* Testimonials Section */
+
+#testimonials {
+    padding: 1rem 0 3rem 0;
+} 
+
+.quote {
+    padding: 1em
+}
+.source {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fa-padding {
+    padding: 0 5px;
+}
+
+
+
+/* Contact Section */
+
+#contact,
+#heading {
+    padding: 60px 0;
+    text-align: center;
+    padding: 4em 0;
+    background-color: #f5f5f5;
+}
+
+#contact-heading {
+    color:#0d0d0d;
+}
+
+#contact form {
+    margin: 40px 0;
+}
+#contact .form-group {
+    margin-bottom: 35px;
+}
+#contact .form-control {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 2px solid #24242a;
+    color: #0d0d0d;
+    min-height: 45px;
+    font-family: 'Brown-Regular';
+    background-color: #f5f5f5;
+}
+#contact textarea {
+    height: 140px;
+    resize: none;
+}
+
+#contact-form-text {
+    color: #0d0d0d;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-block {
+    background: #f5f5f5;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 2px solid #0d0d0d;
+    color: #0d0d0d;
+}
+
+
+.btn-block:hover,
+.btn-block:focus,
+.btn-block:active {
+    background: #0d0d0d;
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#contact-form-text {
+    padding: 1.7em;
+}
+#contact-form-text:hover {
+    color: #f5f5f5;
+    padding: 1.7em;
+}
+
+/* ==========================================================================
+Footer Map Style
+========================================================================== */
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    color: white;
+/*    background: #24242a;*/
+    background: #222;
+    padding: 60px;
+    text-align: center;
+    background-color: #0d0d0d;
+}
+
+#brand {
+    font-family: 'Kaushan Script', cursive;
+    text-transform: none;
+    font-size: 3em;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+footer .social {
+    margin: 40px 0;
+}
+footer .social a {
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+footer .social a:hover,
+footer .social a:focus,
+footer .social a:active {
+    color: #a3a3a3;
+}
+footer h6 {
+
+    font-size: 0.75em;
+    letter-spacing: 0.14375em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.footer-text {
+    font-size: 1em;
+}
+
+.wow, 
+.fadeInUp {
+    visibility: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+
+
+
+
+
+    .navbar {
+        background-color: rgba(0,0,0,0.0001);
+    }
+
+    .nav-link:hover {
+        color: #666;
+        transition: 0.4s;
+    }
+
+    .navbar-brand {
+        max-width: 64px;
+    }
+
+    .nav-link {
+        font-size: 0.875em;
+        letter-spacing: 0.14375em;
+        color: #272727;
+        padding-top: 2em;
+         margin-right: 3em;
+    
+    }
+
+    #cover-heading {
+        font-size: 3em;
+        color: #2D2D2D;
+        margin-bottom: 2.4375rem;
+    }
+
+    #cta-text,
+    #cover-heading {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        text-transform: none;
+    }
+    
+    #cta-text {
+        border: 2px;  
+    }
+    
+    #bold {
+        font-weight: 600;
+    }
+
+    #tagline {
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 1.5em;
+        letter-spacing: none;
+        margin-bottom: 2.4375rem;
+    }
+
+    .lead p,
+    #contact-tag,
+    .btn-block {
+        font-family: 'BrownStd-Bold', serif;
+        font-size: 0.875em;
+        letter-spacing: 0.166875rem;
+        color: #E0E0E0;
+        padding:0;
+        margin:0;
+        text-transform: uppercase;
+    }
+    
+    #contact-tag {
+        color: #0d0d0d;
+    }
+    
+    .btn-block {
+        padding: 1.7em;
+    }
+
+    #video {
+        padding-top: 2em;
+    }
+
+    #cover-container {
+        width: 42rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        color: #2d2d2d;
+    }
+
+    .sep-dot {
+        max-width: 0;
+        border-radius: none;
+        border: none;
+    }
+    
+    #about-video-bg {
+    background: url(img/black-wood-min.jpg) no-repeat center center fixed;
+    background-attachment: scroll;
+    
+}
+    
+    
+
+}
+
+
+
+
