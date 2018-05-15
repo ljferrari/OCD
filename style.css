@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Brown-Regular';
-    src: url('Brown-Regular.eot');
-    src: url('Brown-Regular.woff2') format('woff2'),
-        url('Brown-Regular.woff') format('woff'),
-        url('Brown-Regular.ttf') format('truetype'),
-        url('Brown-Regular.svg#Brown-Regular') format('svg'),
-        url('Brown-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('type/Brown-Regular.eot');
+    src: url('type/Brown-Regular.woff2') format('woff2'),
+        url('type/Brown-Regular.woff') format('woff'),
+        url('type/Brown-Regular.ttf') format('truetype'),
+        url('type/Brown-Regular.svg#Brown-Regular') format('svg'),
+        url('type/Brown-Regular.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -140,9 +140,8 @@ img {
 
 
 
-
 #cover-heading {
-    font-family: 'Playfair-Display';
+    font-family: 'Playfair Display', serif;
     font-size: 2em;
     text-align: center;
     color: #2D2D2D;
