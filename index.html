@@ -8,13 +8,15 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="plugins/animate.css">
         <link rel="stylesheet" href="style.css">
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
 
     </head>
     <body>
@@ -23,17 +25,17 @@
                 <button id="" class="navbar-inverse navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon navbar-inverse"></span>
                 </button>
-                <a class="navbar-brand" href="#footer"><img src="img/OCJ-logo.png"></a>
+                <a class="navbar-brand" href="#" id="top"><img class ="logo" src="img/OCJ-logo-block.png"></a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-sm-auto">
                         <li class="nav-item white">
-                            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item white">
-                            <a class="nav-link white" href="#portfolio"> Portfolio</a>
+                            <a class="nav-link" href="#portfolio"> Portfolio</a>
                         </li>
                         <li class="nav-item white">
-                            <a class="nav-link" href="#contact">Testimonials</a>
+                            <a class="nav-link" href="#footer">Testimonials</a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +44,7 @@
                 <h1 id="cover-heading">Oliver <strong> Carpenter </strong> Joinery </h1>
                 <p class="lead" id="tagline">Bespoke joinery &amp; furniture.</p>
                 <div class="lead">
-                    <a href="#contact" class="btn btn-lg btn-outline-secondary" id="cta-text"><p class ="text-content">Contact for a quote </p></a>
+                    <a href="#footer" class="btn btn-lg btn-outline-secondary" id="cta-text"><p class ="text-content">Contact for a quote </p></a>
 
                 </div>
             </div>
@@ -57,9 +59,9 @@
                         <h2 class="heading"> Hello,</h2>
                         <p class="text-content padding">My name is Oliver Carpenter, and I have have been deisgning and making furniture for over 10 years.<br><br>
 
-My acheivements include set design for London Fashion week, however my passion lies in crafting quality bespoke joinery for my clients.</p>
+                            My acheivements include set design for London Fashion week, however my passion lies in crafting quality bespoke joinery for my clients.</p>
                     </div>
-                    <div class="col-md-7 push-md-3">
+                    <div class="col-md-7 push-md-2">
                         <div id="oli">
                             <img class="img-responsive center-block" src="img/oli3.png" alt="Oliver Carpenter Director">
                         </div>
@@ -68,29 +70,15 @@ My acheivements include set design for London Fashion week, however my passion l
             </div>
         </section>
 
-        <!-- Video
-============================================= -->
-        <section id="video">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6">
-                        <iframe id="video-content" width="560" height="315" src="https://www.youtube.com/embed/ZQICLO90bzo?rel=0&amp;controls=0&amp;showinfo=0&mute=1" frameborder="0" allowfullscreen volume="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
 
         <!-- Portfolio
 ============================================= -->
         <section id="portfolio">
             <div class="container-fluid">
-                <h2 class="heading" id = "portfolio-heading">Portfolio, </h2>
                 <div class="row">
-                    <div class="col-md-4 col-6 wow animated fadeInUp" data-wow-delay=".3s">
-                        <a class="portfolio-box" href="img/1-min.jpg" data-lightbox="image-1" data-title="Your caption">
-                            <img src="img/Set-Design.jpg" class="img-responsive" alt="1">
+                    <div class="col-md-4 col-sm-6 wow animated fadeInUp" data-wow-delay=".3s">
+                        <a class="portfolio-box" href="img/Set-Design.jpg" data-lightbox="image-1" data-title="Your caption">
+                            <img src="img/Set-Design-cropped2.png" class="img-responsive" alt="1">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -103,9 +91,9 @@ My acheivements include set design for London Fashion week, however my passion l
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 col-6 wow animated fadeInUp" data-wow-delay=".3s">
-                        <a href="img/10-min.jpg" class="portfolio-box" data-lightbox="image-2" data-title="Your caption">
-                            <img src="img/white-shelves.jpg" class="img-responsive" alt="2">
+                    <div class="col-md-4 col-sm-6 wow animated fadeInUp" data-wow-delay=".3s">
+                        <a href="img/white-shelves.jpg" class="portfolio-box" data-lightbox="image-2" data-title="Your caption">
+                            <img src="img/white-shelves-cropped2.png" class="img-responsive" alt="2">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -118,9 +106,9 @@ My acheivements include set design for London Fashion week, however my passion l
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 col-6 wow animated fadeInUp" data-wow-delay=".3s">
-                        <a href="img/6-min.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
-                            <img src="img/stand-alone.jpg" class="img-responsive" alt="3">
+                    <div class="col-md-4 col-sm-6 wow animated fadeInUp" data-wow-delay=".3s">
+                        <a href="img/stand-alone.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
+                            <img src="img/cabinet-cropped2.png" class="img-responsive" alt="3">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -133,9 +121,9 @@ My acheivements include set design for London Fashion week, however my passion l
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 col-6 wow animated fadeInUp" data-wow-delay=".3s">
+                    <div class="col-md-4 col-sm-6 wow animated fadeInUp" data-wow-delay=".3s">
                         <a href="img/built.jpg" class="portfolio-box" data-lightbox="image-4" data-title="Your caption">
-                            <img src="img/built.jpg" class="img-responsive" alt="4">
+                            <img src="img/built-in-cropped2.png" class="img-responsive" alt="4">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -148,9 +136,9 @@ My acheivements include set design for London Fashion week, however my passion l
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 col-6 wow animated fadeInUp" data-wow-delay=".3s">
+                    <div class="col-md-4 col-sm-6 wow animated fadeInUp" data-wow-delay=".3s">
                         <a href="img/mixer-unit.jpg" class="portfolio-box" data-lightbox="image-5" data-title="Your caption">
-                            <img src="img/mixer-unit.jpg" class="img-responsive" alt="5">
+                            <img src="img/mixer-unit-cropped2.png" class="img-responsive" alt="5">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -163,9 +151,9 @@ My acheivements include set design for London Fashion week, however my passion l
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 col-6 wow animated fadeInUp" data-wow-delay=".3s">
-                        <a href="img/bespoke.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
-                            <img src="img/bespoke.jpg" class="img-responsive" alt="6">
+                    <div class="col-md-4 col-sm-6 wow animated fadeInUp" data-wow-delay=".3s">
+                        <a href="img/wardrobe.png" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                            <img src="img/wardrobe-cropped2.png" class="img-responsive" alt="6">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
@@ -186,7 +174,6 @@ My acheivements include set design for London Fashion week, however my passion l
 ============================================= -->
         <section id="testimonials">
             <div class="container">
-                <h2 class="heading white" id="testimonials-heading">Testimonials,</h2>
                 <div class="row">
                     <div class="col-md-4 quote wow fadeInUp" data-wow-delay=".3s">
                         <p class="text-content"><i class="fa fa-quote-left fa-padding" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga excepturi repellat, harum reprehenderit dolore consequatur eveniet magni.<i class="fa fa-quote-right fa-padding" aria-hidden="true"></i></p>
@@ -208,58 +195,70 @@ My acheivements include set design for London Fashion week, however my passion l
             </div>
         </section>
 
-        <section id="contact">
+        <!-- Video
+============================================= -->
+        <section id="video">
             <div class="container">
-
-
-                <div class="col-md-6 offset-md-3 box wow fadeInUp" data-wow-delay=".3s">
-                    <h2 class ="heading" id="contact-heading">Contact, </h2>
-                    <p id="contact-tag"> Get in touch
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="Name" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="Email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                        </div>
-                        <a href="#" class="btn-block" id="contact-form-text">Send</a>
-                    </form>
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <iframe id="video-content" width="560" height="315" src="https://www.youtube.com/embed/ZQICLO90bzo?rel=0&amp;controls=0&amp;showinfo=0&mute=1" frameborder="0" allowfullscreen volume="0"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Google Map
 ============================================= -->  
         <div id="map">
-            <iframe = src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20159.507818857957!2d-0.1882592257791671!3d50.83230347942942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758545a1ecffb5%3A0x8b7f9746387e91bd!2s33+Denmark+Villas%2C+Hove+BN3!5e0!3m2!1sen!2suk!4v1501851394794" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe = src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20159.507818857957!2d-0.1882592257791671!3d50.83230347942942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758545a1ecffb5%3A0x8b7f9746387e91bd!2s33+Denmark+Villas%2C+Hove+BN3!5e0!3m2!1sen!2suk!4v1501851394794" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <!-- Footer
 ============================================= -->
         <footer>
-            <div id="footer" class="container">
-                <h1 id="brand">Ollywood</h1>
-                <div class="social">
-                    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-content footer-text align-right">
+                        <a href="#hero-wrapper"><i class="fas fa-chevron-up fa-2x grey"></i></a>
+                    </div>
                 </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-md-4 text-content footer-text align-right">
+                        Back to Top
+                    </div>
+                </div>
+            </div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 text-content footer-text">
-                            &copy; Ollywood 2017
-                        </div>
-                        <div class="col-md-3 push-md-7 text-content footer-text">
-                            Design &amp; code by LJ Ferrari
+            <div id="footer" class="container">
+                <div class=" row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="img/ocj-logo-grey.png" class="footer-logo" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <div class="social">
+                            <a href="https://www.facebook.com/oliverjamesdesign"><i class="fab fa-facebook-square fa-2x grey f-left"></i></a>
+                            <a href="mailto:luciennejferrari@gmail.com.com"><i class="fas fa-envelope-square fa-2x grey"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square fa-2x grey"></i></a>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-content footer-text align-left">
+                        &copy; Oliver Carptenter Joinery
+                    </div>
+                    <div class="col-sm-6 text-content footer-text align-right">
+                        Design &amp; code by &copy; LJF Design
+                    </div>
+                </div>
+            </div>
 
+        </footer>
 
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -271,7 +270,5 @@ My acheivements include set design for London Fashion week, however my passion l
         <script src="plugins/WOW/dist/wow.min.js"></script>
         <script> new WOW().init(); </script>
 
-        <script src="plugins/skrollr-master/dist/skrollr.min.js"></script>
-        <script src ="app.js"></script>
     </body>
 </html>

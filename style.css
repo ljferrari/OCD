@@ -1,31 +1,33 @@
 @font-face {
-  font-family: 'Brown-Regular';
-  src: url('Brown-Regular.eot');
-  src: url('Brown-Regular.woff2') format('woff2'),
-       url('Brown-Regular.woff') format('woff'),
-       url('Brown-Regular.ttf') format('truetype'),
-       url('Brown-Regular.svg#Brown-Regular') format('svg'),
-       url('Brown-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Brown-Regular';
+    src: url('Brown-Regular.eot');
+    src: url('Brown-Regular.woff2') format('woff2'),
+        url('Brown-Regular.woff') format('woff'),
+        url('Brown-Regular.ttf') format('truetype'),
+        url('Brown-Regular.svg#Brown-Regular') format('svg'),
+        url('Brown-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'BrownStd-Bold';
-  src: url('BrownStd-Bold.eot');
-  src: url('BrownStd-Bold.woff2') format('woff2'),
-       url('BrownStd-Bold.woff') format('woff'),
-       url('BrownStd-Bold.ttf') format('truetype'),
-       url('BrownStd-Bold.svg#BrownStd-Bold') format('svg'),
-       url('BrownStd-Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'BrownStd-Bold';
+    src: url('BrownStd-Bold.eot');
+    src: url('BrownStd-Bold.woff2') format('woff2'),
+        url('BrownStd-Bold.woff') format('woff'),
+        url('BrownStd-Bold.ttf') format('truetype'),
+        url('BrownStd-Bold.svg#BrownStd-Bold') format('svg'),
+        url('BrownStd-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 /*
 * Base structure
 */
+
+
 
 a,
 a:focus,
@@ -50,13 +52,9 @@ img {
 
 
 #video {
-    padding-bottom: 8em;
+    padding: 8em 0;
 }
 
-#portfolio,
-#testimonials {
-    padding-top: 1rem;
-} 
 
 #contact {
     padding-top:4em;
@@ -79,19 +77,26 @@ img {
 
 /* Navbar */
 
+.logo {
+    max-width: 3em;
+}
+
+.footer-logo {
+    max-width: 4em;
+    margin-top: 1em;
+}
+
 .navbar {
     position: absolute;
     top:0;
     width: 100%;
     background-color: #222;
 }
-
-.nav-link {
-    font-family: 'BrownStd-Bold', serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 
-    margin: 0rem 1.5em;
+.navbar {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: #222;
 }
 
 .nav-link:hover,
@@ -100,6 +105,27 @@ img {
     transition: 1s;
 }
 
+
+
+.navbar {
+    background-color: rgba(0,0,0,0.0001);
+}
+
+.nav-link:hover {
+    color: #666;
+    transition: 0.4s;
+}
+
+.nav-link {
+    font-family: 'BrownStd-Bold', serif;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.14375em;
+    color: #272727;
+    padding-top: 2em;
+    margin-right: 3em;
+
+}
 
 /* Cover */ 
 
@@ -110,38 +136,53 @@ img {
     align-items: center;
     background: url(img/smoke-min.jpg) center center no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 
-/* Cover Caption */
+
+
+#cover-heading {
+    font-family: 'Playfair-Display';
+    font-size: 2em;
+    text-align: center;
+    color: #2D2D2D;
+    margin-bottom: 2.4375rem;
+}
 
 #cover-container {
     margin: 0 auto;
     text-align: center;
     background-color: none;
     padding: 20px;
-    color: #fff;
 }
 
-#cta-text,
-#cover-heading {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 5em;
+#tagline {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: none;
+    margin-bottom: 2.4375rem;
+}
+
+.lead p,
+#contact-tag,
+.btn-block {
+    font-family: 'BrownStd-Bold', serif;
+    letter-spacing: 0.166875rem;
+    color: #E0E0E0;
+    padding:0;
+    margin:0;
     text-transform: uppercase;
 }
 
-#cover-heading {
-    font-size: 16em;
+#contact-tag {
+    color: #0d0d0d;
 }
 
-
-.lead p {
-    font-size: 0.9em;
-    letter-spacing: 0.15rem;
-    padding:0;
-    margin:0;
+.btn-block {
+    padding: 1.7em;
 }
+
 
 .btn {
     border-radius: 0;
@@ -151,6 +192,11 @@ img {
     border: 0.125em solid #E0E0E0!important;
 }
 
+#cta-text p {
+    font-size: 0.5em;
+    letter-spacing: 0.096em;
+}
+
 .btn-outline-secondary:hover {
     color: white;
     background-color: #0D0D0D;
@@ -158,20 +204,11 @@ img {
     transition: 0.3s;
 }
 
-
-/*
 .btn-lg {
-    padding: 1.3125rem 4.1875rem;
-}
-*/
-
-.btn-lg {
-    padding: 1rem 4.1875rem;
+    padding: 1rem 2rem;
 }
 
-#cta-text p {
-    font-size: 0.875rem;
-}
+
 
 
 /* About Section */
@@ -180,11 +217,12 @@ img {
 #about {
     background-color: #0D0D0D;
     color: #E0E0E0;
-    padding-top: 5.5em;
+    padding-top: 0;
+    overflow: hidden;
 }
 
 .heading {
-    
+
     font-family: 'Nothing You Could Do', cursive;
     letter-spacing: 0.190625;
     font-size: 3.5rem;
@@ -208,9 +246,9 @@ img {
     width: 100%;
     max-width: 25em;
 }
-    
+
 /* Video section */
-    
+
 
 #video {
     background: url(img/black-wood-min.jpg) no-repeat center center;
@@ -222,22 +260,19 @@ img {
     text-align: center;
     color: #F5F5F5;
     position: relative;
-    padding: 8rem;
 }
 
 #video-content {
     width: 100%;
-    margin: 8rem 0;
 }
 
 
 /* Portfolio Section */
 
-#portfolio-heading,
-#testimonials-heading {
+#portfolio-heading {
     margin-top: 1em;
     margin-bottom: 1em;
-    
+
 }
 
 
@@ -246,6 +281,7 @@ img {
     text-align: center;
     background-color: #0d0d0d;
     color: #F5F5F5;
+    overflow: hidden;
 }
 .sep-black {
     border-color: black;
@@ -256,7 +292,6 @@ img {
 }
 
 .project-name {
-    font-family:'Brown-Regular', serif;
     color:#fff;
     line-height: 1.5;
 }
@@ -265,7 +300,9 @@ img {
     font-family: 'BrownStd-Bold', serif;
     line-height: 1.5;
     color: #fff;
-    
+    font-size: 0.75em;
+    letter-spacing: 0.14375em;
+
 }
 
 #portfolio p {
@@ -314,12 +351,8 @@ portfolio .container-fluid .col-md-3 {
 }
 #portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 700;
 }
-#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 18px;
-}
+
 #portfolio .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
 }
@@ -328,8 +361,8 @@ portfolio .container-fluid .col-md-3 {
 /* Testimonials Section */
 
 #testimonials {
-    padding: 1rem 0 3rem 0;
-} 
+    padding: 2em 0;
+}
 
 .quote {
     padding: 1em
@@ -345,96 +378,21 @@ portfolio .container-fluid .col-md-3 {
 
 
 
-/* Contact Section */
 
-#contact,
-#heading {
-    padding: 60px 0;
-    text-align: center;
-    padding: 4em 0;
-    background-color: #f5f5f5;
-}
-
-#contact-heading {
-    color:#0d0d0d;
-}
-
-#contact form {
-    margin: 40px 0;
-}
-#contact .form-group {
-    margin-bottom: 35px;
-}
-#contact .form-control {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    border: 2px solid #24242a;
-    color: #0d0d0d;
-    min-height: 45px;
-    font-family: 'Brown-Regular';
-    background-color: #f5f5f5;
-}
-#contact textarea {
-    height: 140px;
-    resize: none;
-}
-
-#contact-form-text {
-    color: #0d0d0d;
-    padding: 0;
-    margin: 0;
-}
-
-.btn-block {
-    background: #f5f5f5;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 2px solid #0d0d0d;
-    color: #0d0d0d;
-}
-
-
-.btn-block:hover,
-.btn-block:focus,
-.btn-block:active {
-    background: #0d0d0d;
-    color: #f5f5f5;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-#contact-form-text {
-    padding: 1.7em;
-}
-#contact-form-text:hover {
-    color: #f5f5f5;
-    padding: 1.7em;
-}
 
 /* ==========================================================================
 Footer Map Style
 ========================================================================== */
 #map {
     width: 100%;
-    height: 400px;
+    height: 200px;
 }
 
 footer {
-    color: white;
-/*    background: #24242a;*/
-    background: #222;
-    padding: 60px;
+    color: #e0e0e0;
     text-align: center;
     background-color: #0d0d0d;
+    padding: 2em;
 }
 
 #brand {
@@ -448,32 +406,37 @@ footer h1 {
     font-weight: 700;
 }
 footer .social {
-    margin: 40px 0;
+    margin: 2em;
 }
 footer .social a {
     color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-footer .social a:hover,
-footer .social a:focus,
-footer .social a:active {
-    color: #a3a3a3;
+
+.grey {
+    color: #e0e0e0;
 }
+
+.grey:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
 footer h6 {
 
-    font-size: 0.75em;
     letter-spacing: 0.14375em;
     text-transform: uppercase;
     color: #fafafa;
 }
 
 .footer-text {
-    font-size: 1em;
+    font-size: 0.75em;
+
 }
 
 .wow, 
@@ -483,14 +446,12 @@ footer h6 {
 
 
 
-@media (min-width: 768px) {
 
 
+@media (min-width: 576px) {
 
-
-
-    .navbar {
-        background-color: rgba(0,0,0,0.0001);
+    .logo {
+        max-width: 4em;
     }
 
     .nav-link:hover {
@@ -498,40 +459,24 @@ footer h6 {
         transition: 0.4s;
     }
 
-    .navbar-brand {
-        max-width: 64px;
-    }
 
     .nav-link {
         font-size: 0.875em;
         letter-spacing: 0.14375em;
         color: #272727;
         padding-top: 2em;
-         margin-right: 3em;
-    
+        margin-right: 3em;
+
     }
 
     #cover-heading {
+        font-family: 'Playfair Display', serif;
         font-size: 3em;
         color: #2D2D2D;
         margin-bottom: 2.4375rem;
     }
 
-    #cta-text,
-    #cover-heading {
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
-        letter-spacing: 0;
-        text-transform: none;
-    }
-    
-    #cta-text {
-        border: 2px;  
-    }
-    
-    #bold {
-        font-weight: 600;
-    }
+
 
     #tagline {
         font-family: 'Nothing You Could Do', cursive;
@@ -540,25 +485,17 @@ footer h6 {
         margin-bottom: 2.4375rem;
     }
 
-    .lead p,
-    #contact-tag,
-    .btn-block {
-        font-family: 'BrownStd-Bold', serif;
-        font-size: 0.875em;
-        letter-spacing: 0.166875rem;
-        color: #E0E0E0;
-        padding:0;
-        margin:0;
-        text-transform: uppercase;
+    #cta-text p {
+        font-size: 0.875rem;
+        letter-spacing: 0.14375rem;
     }
-    
-    #contact-tag {
-        color: #0d0d0d;
-    }
-    
-    .btn-block {
-        padding: 1.7em;
-    }
+
+.btn-outline-secondary:hover {
+    color: white;
+    background-color: #0D0D0D;
+    border-color: #0D0D0D !important;
+    transition: 0.3s;
+}
 
     #video {
         padding-top: 2em;
@@ -571,23 +508,59 @@ footer h6 {
         padding: 20px;
         color: #2d2d2d;
     }
+    
+   
 
     .sep-dot {
         max-width: 0;
         border-radius: none;
         border: none;
     }
-    
+
     #about-video-bg {
-    background: url(img/black-wood-min.jpg) no-repeat center center fixed;
-    background-attachment: scroll;
+        background: url(img/black-wood-min.jpg) no-repeat center center fixed;
+        background-attachment: scroll;
+
+    }
     
+    #about {
+        padding-top: 5.5em;
+    }
+  
+    
+    #testimonials {
+    padding: 8em 0;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
 }
     
+footer .social {
+    margin: 2em;
+}
+footer .social a {
+    color: #fff;
+    margin-left: 1em;
+    margin-right: 1em;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
     
+.align-right {
+    text-align: right;
+}
 
+.align-left {
+    text-align: left;
 }
 
 
+}
+
+@media (min-width: 960px) {
 
 
