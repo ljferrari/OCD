@@ -12,12 +12,12 @@
 
 @font-face {
     font-family: 'BrownStd-Bold';
-    src: url('BrownStd-Bold.eot');
-    src: url('BrownStd-Bold.woff2') format('woff2'),
-        url('BrownStd-Bold.woff') format('woff'),
-        url('BrownStd-Bold.ttf') format('truetype'),
-        url('BrownStd-Bold.svg#BrownStd-Bold') format('svg'),
-        url('BrownStd-Bold.eot?#iefix') format('embedded-opentype');
+    src: url('type/BrownStd-Bold.eot');
+    src: url('type/BrownStd-Bold.woff2') format('woff2'),
+        url('type/BrownStd-Bold.woff') format('woff'),
+        url('type/BrownStd-Bold.ttf') format('truetype'),
+        url('type/BrownStd-Bold.svg#BrownStd-Bold') format('svg'),
+        url('type/BrownStd-Bold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
