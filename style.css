@@ -77,9 +77,16 @@ img {
 
 /* Navbar */
 
+
 .logo {
-    max-width: 3em;
+    max-width: 4em;
+    visibility: hidden;
 }
+
+.logo-grey {
+    max-width: 4em;
+}
+
 
 .footer-logo {
     max-width: 4em;
@@ -90,25 +97,12 @@ img {
     position: absolute;
     top:0;
     width: 100%;
-    background-color: #222;
-}
-.navbar {
-    position: absolute;
-    top:0;
-    width: 100%;
-    background-color: #222;
+    background-color: #0d0d0d;
 }
 
-.nav-link:hover,
-.navbar-brand:hover {
+.nav-link:hover {
     color: #fff;
     transition: 1s;
-}
-
-
-
-.navbar {
-    background-color: rgba(0,0,0,0.0001);
 }
 
 .nav-link:hover {
@@ -121,11 +115,26 @@ img {
     text-transform: uppercase;
     font-size: 0.75em;
     letter-spacing: 0.14375em;
-    color: #272727;
-    padding-top: 2em;
-    margin-right: 3em;
+    color: #e0e0e0;
+    margin: 0 auto;
+    text-align: center;
 
 }
+
+.navbar {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+
+.navbar-toggler {
+    background-color: #e0e0e0;
+    float:right;
+}
+
+.logo {
+    
+}
+
 
 /* Cover */ 
 
@@ -157,7 +166,7 @@ img {
 
 #tagline {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: center;
     letter-spacing: none;
     margin-bottom: 2.4375rem;
@@ -192,7 +201,7 @@ img {
 }
 
 #cta-text p {
-    font-size: 0.5em;
+    font-size: 0.75em;
     letter-spacing: 0.096em;
 }
 
@@ -452,6 +461,12 @@ footer h6 {
     .logo {
         max-width: 4em;
     }
+    
+    
+    .logo-grey {
+        max-width:1px;
+        display: none;
+    }
 
     .nav-link:hover {
         color: #666;
@@ -462,12 +477,29 @@ footer h6 {
     .nav-link {
         font-size: 0.875em;
         letter-spacing: 0.14375em;
-        color: #272727;
+        color: #0d0d0d;
         padding-top: 2em;
-        margin-right: 3em;
-
+        margin-right: 2em;
+    }
+        
+    .right-link {
+        margin-right:0;
     }
 
+    
+.navbar {
+    
+        background-color: rgba(0,0,0,0.0001);
+}
+
+    .logo {
+        visibility: visible;
+        margin-left: em;
+    }
+    
+    .logo-grey {
+        visibility: hidden;
+    }
     #cover-heading {
         font-family: 'Playfair Display', serif;
         font-size: 3em;
@@ -559,7 +591,7 @@ footer .social a {
 
 
 }
-
-@media (min-width: 960px) {
+ 
+    
 
 
