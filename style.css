@@ -80,7 +80,7 @@ img {
 
 .logo {
     max-width: 4em;
-    visibility: hidden;
+    display: none;
 }
 
 .logo-grey {
@@ -385,7 +385,9 @@ portfolio .container-fluid .col-md-3 {
 }
 
 
-
+ #speech {
+        display: none;
+    }
 
 
 /* ==========================================================================
@@ -493,12 +495,12 @@ footer h6 {
 }
 
     .logo {
-        visibility: visible;
-        margin-left: em;
+        display: inline-block;
+        margin-left: 1em;
     }
     
     .logo-grey {
-        visibility: hidden;
+        display: none;
     }
     #cover-heading {
         font-family: 'Playfair Display', serif;
@@ -542,11 +544,6 @@ footer h6 {
     
    
 
-    .sep-dot {
-        max-width: 0;
-        border-radius: none;
-        border: none;
-    }
 
     #about-video-bg {
         background: url(img/black-wood-min.jpg) no-repeat center center fixed;
@@ -589,6 +586,19 @@ footer .social a {
     text-align: left;
 }
 
+@media (min-width: 768px) {
+    
+    .sep-dot {
+        max-width: 0;
+        border-radius: none;
+        border: none;
+    }
+    
+     #speech {
+        display: inline-block;
+    }
+    
+}
 
 }
  
