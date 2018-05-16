@@ -51,9 +51,6 @@ img {
 /*padding & margin */
 
 
-#video {
-    padding: 8em 0;
-}
 
 
 #contact {
@@ -273,6 +270,7 @@ img {
     text-align: center;
     color: #F5F5F5;
     position: relative;
+    padding: 8em;
 }
 
 #video-content {
@@ -535,9 +533,6 @@ footer h6 {
     transition: 0.3s;
 }
 
-    #video {
-        padding-top: 2em;
-    }
 
     #cover-container {
         width: 42rem;
