@@ -33,6 +33,7 @@ a,
 a:focus,
 a:hover {
     color: #fff;
+    text-decoration: none;
 }
 
 html,
@@ -270,7 +271,7 @@ img {
     text-align: center;
     color: #F5F5F5;
     position: relative;
-    padding: 8em;
+    padding: 8em 3em;
 }
 
 #video-content {
@@ -457,11 +458,21 @@ footer h6 {
     visibility: hidden;
 }
 
-
+. wow,
+.animated, 
+.fadeInUp {
+    visibility: hidden
+}
 
 
 
 @media (min-width: 576px) {
+    
+    . wow,
+.animated, 
+.fadeInUp {
+    visibility: visible;
+}
 
     .logo {
         max-width: 4em;
@@ -587,6 +598,20 @@ footer .social a {
 }
 
 @media (min-width: 768px) {
+    
+    #video {
+    background: url(img/black-wood-min.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #F5F5F5;
+    position: relative;
+    padding: 8em 1em;
+
+}
     
     .sep-dot {
         max-width: 0;
